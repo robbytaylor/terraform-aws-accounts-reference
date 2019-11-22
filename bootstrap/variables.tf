@@ -21,3 +21,7 @@ variable users {
   type    = list(string)
   default = []
 }
+
+locals {
+  create_iam = length(var.users) > 0
+}
