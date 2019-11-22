@@ -20,6 +20,11 @@ variable email_prefix {
   description = "The prefix for account email addresses. Emails will be in the format <prefix><account name>@<domain>"
 }
 
+variable admin_group {
+  type    = string
+  default = "Admin"
+}
+
 variable region {
   type    = string
   default = "eu-west-1"
