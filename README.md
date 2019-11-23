@@ -1,5 +1,7 @@
 # Terraform AWS Accounts Reference
 
+Read the introductory post for this repository [on Medium](https://medium.com/@robbytaylor/how-i-manage-my-aws-accounts-with-terraform-f52c63dd2aa)
+
 This repo contains a simple Terraform reference configuration for managing multiple AWS accounts as part of an AWS Organization.
 
 You can either use this Terraform to create a new AWS environment or apply it to an existing environment by importing existing resources into the Terraform state.
