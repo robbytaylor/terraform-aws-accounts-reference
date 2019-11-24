@@ -31,7 +31,7 @@ After applying the Terraform you should commit this state file to source control
 
 ## Account creation
 
-The Terraform in the `accounts/0-creation` directory should also be applied to the root account.
+The Terraform in the `accounts/-creation` directory should also be applied to the root account.
 
 This will create an AWS organization and as many accounts as you specify names for in the `account_names` variable.
 
