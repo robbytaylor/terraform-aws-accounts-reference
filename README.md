@@ -45,7 +45,7 @@ The bucket policy for the Terraform state bucket is also updated to allow the `A
 
 ## Account specific Terraform
 
-The `accounts/1-root` and `accounts/test-account` directories contain account specific resources.
+The `accounts/-root` and `accounts/test-account` directories contain account specific resources.
 These configurations should be applied against their respective accounts.
 
 For the `test-account` an example S3 bucket is created.
