@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 provider "aws" {
-  alias  = "test-account"
+  alias  = "staging"
   region = var.region
 
   assume_role {
