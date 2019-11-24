@@ -4,9 +4,11 @@ Read the introductory post for this repository [on Medium](https://medium.com/@r
 
 This repo contains a simple Terraform reference configuration for managing multiple AWS accounts as part of an AWS Organization.
 
-You can either use this Terraform to create a new AWS environment or apply it to an existing environment by importing existing resources into the Terraform state.
+You can either use this Terraform to create a new AWS environment or apply it to an existing environment by importing resources (Organization, accounts, etc.) into the Terraform state.
+
 
 This code isn't intended to be run as-is, but should instead serve as a reference which you can build on and adapt to your own needs.
+In particular, you would need to update any S3 bucket names before being able to run this code.
 
 There are multiple parts to this Terraform, designed to be applied seperately.
 
