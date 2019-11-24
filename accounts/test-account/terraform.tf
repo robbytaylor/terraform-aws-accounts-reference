@@ -3,7 +3,7 @@ terraform {
 
   backend "s3" {
     bucket  = "example-bucket"
-    key     = "accounts/test-account.tfstate"
+    key     = "accounts/test-account/terraform.tfstate"
     region  = "eu-west-1"
     acl     = "bucket-owner-full-control"
     encrypt = true

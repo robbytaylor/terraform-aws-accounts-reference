@@ -4,7 +4,7 @@ data aws_iam_policy_document bucket-policy {
 
     content {
       sid       = "put-state-${local.accounts[statement.key].name}"
-      resources = ["arn:aws:s3:::${var.state_bucket}/accounts/${local.accounts[statement.key].name}.tfstate"]
+      resources = ["arn:aws:s3:::${var.state_bucket}/accounts/${local.accounts[statement.key].name}/*"]
       actions   = ["s3:PutObject"]
 
       principals {
