@@ -1,5 +1,5 @@
 resource aws_s3_bucket example {
-  bucket = "test-account-bucket"
+  bucket = "production-account-bucket"
   acl    = "private"
 
   versioning {
