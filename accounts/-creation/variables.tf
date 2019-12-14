@@ -1,9 +1,10 @@
 locals {
   accounts = aws_organizations_account.account
-}
 
-variable "account_names" {
-  type = list(string)
+  account_names = concat(
+    [for dir, ignore in data.external.accounts.result : replace(dir, "../", "") if dir != ""],
+    var.account_names
+  )
 }
 
 variable state_bucket {
@@ -18,6 +19,11 @@ variable email_domain {
 variable email_prefix {
   type        = string
   description = "The prefix for account email addresses. Emails will be in the format <prefix><account name>@<domain>"
+}
+
+variable "account_names" {
+  type    = list(string)
+  default = []
 }
 
 variable admin_group {
