@@ -3,7 +3,8 @@
 ## Requirements
 
 * *Terraform >= 0.12
-* jq will need to be installed
+* [Terragrunt](https://github.com/gruntwork-io/terragrunt)
+* [jq](https://stedolan.github.io/jq/)
 
 ## Introduction
 
