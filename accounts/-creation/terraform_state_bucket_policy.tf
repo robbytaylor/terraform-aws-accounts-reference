@@ -29,12 +29,12 @@ data aws_iam_policy_document bucket-policy {
     }
   }
 
-  depends_on = ["aws_organizations_account.account"]
+  depends_on = [aws_organizations_account.account]
 }
 
 resource "aws_s3_bucket_policy" "teraform-state" {
   bucket = var.state_bucket
   policy = data.aws_iam_policy_document.bucket-policy.json
 
-  depends_on = ["aws_organizations_account.account"]
+  depends_on = [aws_organizations_account.account]
 }
